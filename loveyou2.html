@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Für dich ❤️</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+}
+
+/* Canvas fullscreen */
+canvas {
+    position: fixed;
+    inset: 0;
+}
+
+/* Startscreen */
+#textBox {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    z-index: 10;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background: hotpink;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div id="textBox">
+    <div>
+        <h2>Ich muss dir was sagen...</h2>
+        <p>Klick 😊</p>
+        <button onclick="start()">Weiter</button>
+    </div>
+</div>
+
+<canvas id="c"></canvas>
+
+<script src="heart.js"></script>
+</body>
+</html>
